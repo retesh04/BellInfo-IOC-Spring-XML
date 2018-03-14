@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!-- <context:component-scan base-package="com.ioc"/>
+
+    <context:annotation-config/>
+
+    <context:property-placeholder location="resources.properties"/>-->
+<!--
+    <bean id="itemDao" class="com.ioc.ItemDAO"/>
+    <bean id="accountDao" class="com.ioc.AccountDAO"/>
+
+    <bean id="petService" class="com.ioc.PetStoreService">
+        <constructor-arg name="accountDAO" ref="accountDao"/>
+        <constructor-arg name="itemDAO" ref="itemDao"/>
+    </bean>-->
+
+    <context:component-scan base-package="com.bellinfo"></context:component-scan>
+    <context:annotation-config/>
+
+<!-- 
+    <bean id="animalService" class="com.bellinfo.ioc.xml.AnimalStoreService">
+        <constructor-arg name="catalogService" ref="catalogService"/>
+        <constructor-arg name="paymentService" ref="paymentService"/>
+    </bean>
+
+
+    <bean id="catalogService" class="com.bellinfo.ioc.xml.CatalogService">
+        <property name="catalogName" value="Dogs"/>
+    </bean>
+
+    <bean id="paymentService" class="com.bellinfo.ioc.xml.PaymentService">
+        <property name="paymentType" value="Credit"/>
+    </bean> -->
+
+
+
+
+
+</beans>
+
+
